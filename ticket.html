@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Ticket | R&Y Event</title>
+
+    <link rel="stylesheet" href="css/ticket.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Header -->
+
+<header>
+
+    <div class="logo">
+
+        <i class="fa-solid fa-ticket"></i>
+
+        <h2>R&Y EVENT</h2>
+
+    </div>
+
+    <nav>
+
+        <a href="home.html">Home</a>
+
+        <a href="events.html">Events</a>
+
+        <a href="profile.html">Profile</a>
+
+        <a href="login.html">Logout</a>
+
+    </nav>
+
+</header>
+
+<!-- Ticket -->
+
+<section class="ticket-section">
+
+    <div class="ticket-card">
+
+        <div class="ticket-header">
+
+            <h1>EVENT TICKET</h1>
+
+            <span class="paid">PAID</span>
+
+        </div>
+
+        <div class="ticket-body">
+
+            <div class="left">
+
+                <h2 id="eventName">
+
+                    Underground Party
+
+                </h2>
+
+                <p>
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <span id="customerName">
+
+                        Customer Name
+
+                    </span>
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <span id="customerEmail">
+
+                        customer@email.com
+
+                    </span>
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Colombo
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-calendar"></i>
+
+                    25 July 2026
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-ticket"></i>
+
+                    Tickets :
+
+                    <span id="ticketQty">
+
+                        1
+
+                    </span>
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-money-bill"></i>
+
+                    Total :
+
+                    Rs.
+
+                    <span id="ticketTotal">
+
+                        3500
+
+                    </span>
+
+                </p>
+
+            </div>
+
+            <div class="right">
+
+                <img
+                    id="qrCode"
+                    src="images/qr-placeholder.png"
+                    alt="QR Code">
+
+                <p>
+
+                    Scan QR at Event Entrance
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="ticket-footer">
+
+            <button id="printBtn">
+
+                <i class="fa-solid fa-print"></i>
+
+                Print Ticket
+
+            </button>
+
+            <button id="downloadBtn">
+
+                <i class="fa-solid fa-download"></i>
+
+                Download PDF
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+
+        © 2026 R&Y Event (PVT) Ltd.
+        All Rights Reserved.
+
+    </p>
+
+</footer>
+
+<script src="js/ticket.js"></script>
+
+</body>
+
+</html>

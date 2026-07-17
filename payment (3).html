@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Payment | R&Y Event</title>
+
+<link rel="stylesheet" href="payment.css">
+
+</head>
+
+
+<body>
+
+
+<div class="payment-container">
+
+
+<div class="payment-box">
+
+
+<h1>Payment</h1>
+
+
+<div class="order-details">
+
+
+<h2 id="eventName">
+Event Name
+</h2>
+
+
+<p>
+Tickets :
+<span id="ticketCount"></span>
+</p>
+
+
+<p>
+Total Amount :
+Rs.<span id="amount"></span>
+</p>
+
+
+</div>
+
+
+
+
+<form id="paymentForm">
+
+
+<label>
+Payment Method
+</label>
+
+
+<select id="method">
+
+
+<option value="Card">
+Credit / Debit Card
+</option>
+
+
+<option value="Bank">
+Bank Transfer
+</option>
+
+
+<option value="Cash">
+Cash Payment
+</option>
+
+
+</select>
+
+
+
+<input 
+type="text"
+id="cardName"
+placeholder="Card Holder Name"
+required>
+
+
+
+<input 
+type="text"
+id="cardNumber"
+placeholder="Card Number"
+required>
+
+
+
+<input 
+type="text"
+id="expiry"
+placeholder="MM/YY"
+required>
+
+
+
+<input 
+type="password"
+id="cvv"
+placeholder="CVV"
+required>
+
+
+
+<button type="submit">
+
+Pay Now
+
+</button>
+
+
+</form>
+
+
+
+</div>
+
+
+</div>
+
+
+
+<script src="payment.js"></script>
+
+
+</body>
+
+</html>

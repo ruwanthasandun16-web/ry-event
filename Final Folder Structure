@@ -1,0 +1,38 @@
+RY-Event-Booking-System/
+
+assets/
+   css/
+   js/
+   images/
+   icons/
+   fonts/
+
+pages/
+   home.html
+   events.html
+   booking.html
+   payment.html
+   ticket.html
+   profile.html
+   login.html
+   register.html
+   contact.html
+   about.html
+
+admin/
+   login.html
+   dashboard.html
+   events.html
+   users.html
+   bookings.html
+   payments.html
+   scanner.html
+
+firebase/
+   firebase.js
+
+database/
+   firestore.rules
+
+README.md
+LICENSE

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Booking | R&Y Event</title>
+
+<link rel="stylesheet" href="booking.css">
+
+</head>
+
+
+<body>
+
+
+<div class="booking-container">
+
+
+<div class="booking-box">
+
+
+<h1>Event Booking</h1>
+
+
+<div class="event-details">
+
+<h2 id="selectedEventName">
+Event Name
+</h2>
+
+<p>
+📅 Date :
+<span id="selectedDate"></span>
+</p>
+
+
+<p>
+📍 Location :
+<span id="selectedLocation"></span>
+</p>
+
+
+<p>
+💵 Price :
+Rs.<span id="selectedPrice"></span>
+</p>
+
+
+</div>
+
+
+
+<form id="bookingForm">
+
+
+<input 
+type="number"
+id="tickets"
+placeholder="Number of Tickets"
+min="1"
+required>
+
+
+<button type="submit">
+Continue Payment
+</button>
+
+
+</form>
+
+
+
+</div>
+
+
+</div>
+
+
+
+<script src="localStorage.js"></script>
+<script src="booking.js"></script>
+
+
+</body>
+
+</html>

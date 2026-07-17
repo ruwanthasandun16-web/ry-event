@@ -1,0 +1,336 @@
+/* ==========================================
+   R&Y Event - Ticket Page
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0b0b0f;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+    width:100%;
+    height:80px;
+    position:sticky;
+    top:0;
+    background:#111;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 8%;
+    z-index:1000;
+    box-shadow:0 5px 20px rgba(0,0,0,.4);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo i{
+    color:#8A2BE2;
+    font-size:28px;
+}
+
+.logo h2{
+    color:#8A2BE2;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#8A2BE2;
+}
+
+/* ==========================
+   TICKET SECTION
+========================== */
+
+.ticket-section{
+    padding:60px 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* ==========================
+   TICKET CARD
+========================== */
+
+.ticket-card{
+    width:100%;
+    max-width:1000px;
+    background:#17171f;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.5);
+}
+
+/* Header */
+
+.ticket-header{
+    background:#8A2BE2;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 30px;
+}
+
+.ticket-header h1{
+    font-size:30px;
+}
+
+.paid{
+    background:#00c853;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+/* Body */
+
+.ticket-body{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+    padding:35px;
+}
+
+.left h2{
+    margin-bottom:25px;
+    color:#8A2BE2;
+}
+
+.left p{
+    margin-bottom:18px;
+    color:#ddd;
+    font-size:17px;
+}
+
+.left i{
+    width:30px;
+    color:#8A2BE2;
+}
+
+.right{
+    text-align:center;
+}
+
+.right img{
+    width:220px;
+    height:220px;
+    background:#fff;
+    padding:10px;
+    border-radius:10px;
+    margin:auto;
+}
+
+.right p{
+    margin-top:15px;
+    color:#bbb;
+}
+
+/* Footer */
+
+.ticket-footer{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:25px;
+    background:#111118;
+}
+
+.ticket-footer button{
+    padding:15px 30px;
+    border:none;
+    border-radius:10px;
+    background:#8A2BE2;
+    color:#fff;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.ticket-footer button:hover{
+    background:#6f21d8;
+    transform:translateY(-3px);
+}
+
+.ticket-footer i{
+    margin-right:8px;
+}
+
+/* Footer */
+
+footer{
+    background:#111;
+    text-align:center;
+    padding:25px;
+    color:#888;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#8A2BE2;
+    border-radius:10px;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    .ticket-body{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .left i{
+        width:auto;
+        margin-right:10px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+    }
+
+    nav{
+        margin-top:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .ticket-header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .ticket-header h1{
+        font-size:24px;
+    }
+
+    .ticket-footer{
+        flex-direction:column;
+    }
+
+    .ticket-footer button{
+        width:100%;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .right img{
+        width:180px;
+        height:180px;
+    }
+
+    .left p{
+        font-size:15px;
+    }
+
+    .ticket-header h1{
+        font-size:20px;
+    }
+
+}
+@media(max-width:600px){
+
+
+body{
+
+overflow-x:hidden;
+
+}
+
+
+
+header{
+
+padding:15px;
+
+}
+
+
+
+.logo{
+
+font-size:22px;
+
+}
+
+
+
+button{
+
+font-size:14px;
+
+}
+
+
+
+input,
+select{
+
+font-size:16px;
+
+}
+
+
+
+.event-container{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.ticket-box,
+.payment-box,
+.booking-box,
+.login-box{
+
+width:90%;
+
+}
+
+
+}

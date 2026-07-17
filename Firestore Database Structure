@@ -1,0 +1,41 @@
+users
+    uid
+        name
+        email
+        phone
+        role
+        image
+
+events
+    eventId
+        title
+        category
+        location
+        date
+        price
+        seats
+        image
+
+bookings
+    bookingId
+        userId
+        eventId
+        paymentStatus
+        qrCode
+        bookingDate
+
+payments
+    paymentId
+        bookingId
+        amount
+        method
+        status
+
+tickets
+    ticketId
+        bookingId
+        qrData
+        scanned
+
+reports
+    reportId
